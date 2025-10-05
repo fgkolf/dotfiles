@@ -1,0 +1,13 @@
+[user]
+	email = fontas.gkolf@gmail.com
+	name = fgkolf
+[core]
+	autocrlf = input
+	pager = delta
+	excludesfile = ~/.gitignore_global
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictStyle = zdiff3
