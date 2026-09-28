@@ -11,5 +11,7 @@
 	navigate = true
 [merge]
 	conflictStyle = zdiff3
+[push]
+	autoSetupRemote = true
 [alias]
 	uncommit = reset --soft HEAD^
