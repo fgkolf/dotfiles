@@ -8,6 +8,7 @@ Personal dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
 |---------|----------|
 | `git`   | `~/.gitconfig`, `~/.gitignore_global` |
 | `kitty` | `~/.config/kitty/` |
+| `obsidian` | `~/Documents/local/.obsidian/themes/foyay/` |
 
 ## Setup on a new machine
 
@@ -24,10 +25,13 @@ cd ~/dotfiles
 # 3. Stow individual packages
 stow git
 stow kitty
+stow obsidian
 
 # or stow everything at once
 stow */
 ```
+
+The `obsidian` package expects the vault at `~/Documents/local`. Open it in Obsidian once before stowing, otherwise stow links the whole vault folder into the repo. After stowing, pick foyay under Settings → Appearance → Themes. It has light and dark variants.
 
 Stow creates symlinks from `~` into the package directories, so `dotfiles/kitty/.config/kitty/kitty.conf` becomes `~/.config/kitty/kitty.conf`.
 

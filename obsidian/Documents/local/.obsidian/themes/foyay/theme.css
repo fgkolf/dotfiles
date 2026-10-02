@@ -1,0 +1,176 @@
+.theme-light {
+  --color-base-00: #abd1c6;
+  --color-base-05: #a6cdc2;
+  --color-base-10: #a1c9bd;
+  --color-base-20: #9ac3b7;
+  --color-base-25: #93bdb0;
+  --color-base-30: #86b2a5;
+  --color-base-35: #7ba89a;
+  --color-base-40: #6a9a8c;
+  --color-base-50: #4f7f72;
+  --color-base-60: #3a6a5e;
+  --color-base-70: #2a554b;
+  --color-base-100: #001e1d;
+
+  --link-color: #004643;
+  --link-color-hover: #c45f00;
+  --link-external-color: #004643;
+  --link-external-color-hover: #c45f00;
+  --link-unresolved-color: #004643;
+  --tag-color: #004643;
+  --tag-color-hover: #001e1d;
+  --tag-background: rgba(0, 70, 67, 0.1);
+  --tag-background-hover: rgba(255, 137, 6, 0.35);
+  --code-normal: #004643;
+
+  --text-highlight-bg: rgba(255, 137, 6, 0.4);
+  --background-modifier-cover: rgba(0, 30, 29, 0.45);
+
+  --foyay-chrome-bg: #004643;
+  --foyay-chrome-bg-alt: #003d3a;
+  --foyay-chrome-bg-sunken: #003734;
+  --foyay-chrome-border: #0d5c58;
+  --foyay-chrome-border-hover: #167066;
+  --foyay-chrome-border-focus: #2a8277;
+
+  --foyay-tab-active-bg: #abd1c6;
+  --foyay-tab-active-text: #001e1d;
+  --foyay-tab-active-icon: #2a554b;
+  --foyay-tab-active-icon-hover: #001e1d;
+}
+
+.theme-dark {
+  --color-base-00: #0b3a37;
+  --color-base-05: #0d3d3a;
+  --color-base-10: #0f413e;
+  --color-base-20: #124643;
+  --color-base-25: #164d49;
+  --color-base-30: #1b5551;
+  --color-base-35: #225e5a;
+  --color-base-40: #2f6d68;
+  --color-base-50: #5a8f86;
+  --color-base-60: #7aa79a;
+  --color-base-70: #abd1c6;
+  --color-base-100: #dcece6;
+
+  --code-normal: #abd1c6;
+
+  --text-highlight-bg: rgba(255, 137, 6, 0.35);
+  --background-modifier-cover: rgba(0, 10, 10, 0.55);
+
+  --foyay-chrome-bg: #001e1d;
+  --foyay-chrome-bg-alt: #002523;
+  --foyay-chrome-bg-sunken: #001715;
+  --foyay-chrome-border: #0b3330;
+  --foyay-chrome-border-hover: #144541;
+  --foyay-chrome-border-focus: #20564f;
+
+  --foyay-tab-active-bg: #0b3a37;
+  --foyay-tab-active-text: #e6f2ee;
+  --foyay-tab-active-icon: #c4e0d7;
+  --foyay-tab-active-icon-hover: #e6f2ee;
+}
+
+.theme-light,
+.theme-dark {
+  --accent-h: 32;
+  --accent-s: 100%;
+  --accent-l: 51%;
+  --text-on-accent: #001e1d;
+  --text-highlight-bg-rgb: 255, 137, 6;
+}
+
+.workspace-ribbon,
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split,
+.workspace-split.mod-root .workspace-tab-header-container,
+.sidebar-toggle-button,
+.titlebar,
+.status-bar {
+  --background-primary: var(--foyay-chrome-bg);
+  --background-primary-alt: var(--foyay-chrome-bg-alt);
+  --background-secondary: var(--foyay-chrome-bg);
+  --background-secondary-alt: var(--foyay-chrome-bg-sunken);
+  --background-modifier-border: var(--foyay-chrome-border);
+  --background-modifier-border-hover: var(--foyay-chrome-border-hover);
+  --background-modifier-border-focus: var(--foyay-chrome-border-focus);
+  --background-modifier-hover: rgba(171, 209, 198, 0.12);
+  --background-modifier-active-hover: rgba(255, 137, 6, 0.18);
+  --background-modifier-form-field: var(--foyay-chrome-bg-sunken);
+  --interactive-normal: var(--foyay-chrome-border);
+  --interactive-hover: var(--foyay-chrome-border-hover);
+  --text-selection: rgba(255, 137, 6, 0.3);
+
+  --text-normal: #e6f2ee;
+  --text-muted: #c4e0d7;
+  --text-faint: #8fbcae;
+  --text-accent: #ff8906;
+
+  --icon-color: var(--text-muted);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-active: var(--text-accent);
+  --icon-color-focused: var(--text-normal);
+  --collapse-icon-color: var(--text-faint);
+  --collapse-icon-color-collapsed: var(--text-accent);
+  --divider-color: var(--background-modifier-border);
+
+  --nav-item-size: 14px;
+  --nav-item-weight: var(--font-medium);
+  --nav-item-weight-hover: var(--font-medium);
+  --nav-item-weight-active: var(--font-semibold);
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-accent);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-highlighted: var(--text-accent);
+  --nav-item-background-hover: var(--background-modifier-hover);
+  --nav-item-background-active: rgba(255, 137, 6, 0.15);
+  --nav-collapse-icon-color: var(--collapse-icon-color);
+  --nav-collapse-icon-color-collapsed: var(--text-faint);
+  --nav-heading-color: var(--text-normal);
+  --nav-heading-color-hover: var(--text-normal);
+  --nav-heading-color-collapsed: var(--text-faint);
+  --nav-heading-color-collapsed-hover: var(--text-muted);
+  --nav-tag-color: var(--text-faint);
+  --nav-tag-color-hover: var(--text-muted);
+  --nav-tag-color-active: var(--text-muted);
+
+  --ribbon-background: var(--background-secondary);
+  --ribbon-background-collapsed: var(--background-primary);
+  --search-clear-button-color: var(--text-muted);
+  --search-icon-color: var(--text-muted);
+  --search-result-background: var(--background-primary);
+  --status-bar-background: var(--background-secondary);
+  --status-bar-border-color: var(--divider-color);
+  --status-bar-text-color: var(--text-muted);
+
+  --tab-background-active: var(--background-primary);
+  --tab-text-color: var(--text-faint);
+  --tab-text-color-active: var(--text-muted);
+  --tab-text-color-focused: var(--text-muted);
+  --tab-text-color-focused-active: var(--text-muted);
+  --tab-text-color-focused-highlighted: var(--text-accent);
+  --tab-text-color-focused-active-current: var(--text-normal);
+  --tab-container-background: var(--background-secondary);
+  --tab-divider-color: var(--background-modifier-border-hover);
+  --tab-outline-color: var(--divider-color);
+
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-border-color: var(--background-modifier-border);
+  --titlebar-text-color: var(--text-muted);
+  --titlebar-text-color-focused: var(--text-normal);
+  --vault-profile-color: var(--text-normal);
+  --vault-profile-color-hover: var(--vault-profile-color);
+}
+
+.workspace-split.mod-root .workspace-tab-header-container {
+  --tab-background-active: var(--foyay-tab-active-bg);
+  --tab-text-color-focused-active: var(--foyay-tab-active-text);
+  --tab-text-color-focused-active-current: var(--foyay-tab-active-text);
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active {
+  --icon-color: var(--foyay-tab-active-icon);
+  --icon-color-hover: var(--foyay-tab-active-icon-hover);
+}
