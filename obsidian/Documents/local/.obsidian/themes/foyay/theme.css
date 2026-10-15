@@ -22,6 +22,18 @@
   --tag-background: rgba(0, 70, 67, 0.1);
   --tag-background-hover: rgba(255, 137, 6, 0.35);
   --code-normal: #004643;
+  --code-background: #e6f2ee;
+  --code-border-color: #7ba89a;
+  --code-comment: #4a7266;
+  --code-punctuation: #2a554b;
+  --code-function: #8a5300;
+  --code-important: #b04a00;
+  --code-keyword: #a3195b;
+  --code-operator: #b3261e;
+  --code-tag: #b3261e;
+  --code-property: #006b66;
+  --code-string: #2f6b1c;
+  --code-value: #5b3fc4;
 
   --text-highlight-bg: rgba(255, 137, 6, 0.4);
   --background-modifier-cover: rgba(0, 30, 29, 0.45);
@@ -54,6 +66,18 @@
   --color-base-100: #dcece6;
 
   --code-normal: #abd1c6;
+  --code-background: #002523;
+  --code-border-color: #1b5551;
+  --code-comment: #8fbcae;
+  --code-punctuation: #abd1c6;
+  --code-function: #f9bc60;
+  --code-important: #ff8906;
+  --code-keyword: #fa99cd;
+  --code-operator: #ff7b72;
+  --code-tag: #ff7b72;
+  --code-property: #5ee0d6;
+  --code-string: #8bd98a;
+  --code-value: #c3a6ff;
 
   --text-highlight-bg: rgba(255, 137, 6, 0.35);
   --background-modifier-cover: rgba(0, 10, 10, 0.55);
@@ -78,6 +102,7 @@
   --accent-l: 51%;
   --text-on-accent: #001e1d;
   --text-highlight-bg-rgb: 255, 137, 6;
+  --code-border-width: 1px;
 }
 
 .workspace-ribbon,
@@ -173,4 +198,11 @@
 .workspace-split.mod-root .workspace-tab-header.is-active {
   --icon-color: var(--foyay-tab-active-icon);
   --icon-color-hover: var(--foyay-tab-active-icon-hover);
+}
+
+.markdown-rendered :not(pre) > code,
+.cm-s-obsidian .cm-inline-code,
+kbd {
+  --code-background: var(--background-primary-alt);
+  --code-border-width: 0;
 }
