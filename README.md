@@ -6,7 +6,7 @@ Personal dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
 | Package | Symlinks |
 |---------|----------|
-| `git`   | `~/.gitconfig`, `~/.gitignore_global` |
+| `git`   | `~/.config/git/config`, `~/.config/git/ignore` |
 | `kitty` | `~/.config/kitty/` |
 | `obsidian` | `~/Documents/local/.obsidian/themes/foyay/` |
 
@@ -36,6 +36,15 @@ The `obsidian` package expects the vault at `~/Documents/local`. Open it in Obsi
 Stow creates symlinks from `~` into the package directories, so `dotfiles/kitty/.config/kitty/kitty.conf` becomes `~/.config/kitty/kitty.conf`.
 
 To remove symlinks for a package: `stow -D <package>`
+
+## Machine-specific git settings
+
+`~/.gitconfig` is not in this repo. Git reads `~/.config/git/config` first and `~/.gitconfig` second, so a value in `~/.gitconfig` overrides the shared one. Use it for settings that differ per machine, such as a work email:
+
+```ini
+[user]
+	email = you@work.example
+```
 
 ## Updating
 

@@ -1,0 +1,5 @@
+.idea
+.generators
+.rakeTasks
+**/.claude/settings.local.json
+/working/
