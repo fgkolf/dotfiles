@@ -7,8 +7,8 @@ Personal dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/).
 | Package | Symlinks |
 |---------|----------|
 | `git`   | `~/.config/git/config`, `~/.config/git/ignore` |
-| `kitty` | `~/.config/kitty/` |
-| `obsidian` | `~/Documents/local/.obsidian/themes/foyay/` |
+| `kitty` | `~/.config/kitty/kitty.conf`, `~/.config/kitty/colors.conf` |
+| `obsidian` | `~/Documents/local/.obsidian/themes/foyay/manifest.json`, `~/Documents/local/.obsidian/themes/foyay/theme.css` |
 
 ## Setup on a new machine
 
@@ -31,9 +31,11 @@ stow obsidian
 stow */
 ```
 
-The `obsidian` package expects the vault at `~/Documents/local`. Open it in Obsidian once before stowing, otherwise stow links the whole vault folder into the repo. After stowing, pick foyay under Settings → Appearance → Themes. It has light and dark variants.
+The `obsidian` package expects the vault at `~/Documents/local`. After stowing, pick foyay under Settings → Appearance → Themes. It has light and dark variants.
 
 Stow creates symlinks from `~` into the package directories, so `dotfiles/kitty/.config/kitty/kitty.conf` becomes `~/.config/kitty/kitty.conf`.
+
+`.stowrc` sets `--no-folding`, so stow creates real directories and links only individual files. Anything an app writes next to its config (caches, credentials, vault data) stays out of the repo. Stow only reads `.stowrc` from the current directory, so always run it from `~/dotfiles`.
 
 To remove symlinks for a package: `stow -D <package>`
 
@@ -48,4 +50,4 @@ To remove symlinks for a package: `stow -D <package>`
 
 ## Updating
 
-A `git pull` is enough to apply changes — symlinks point directly into the repo, so updates are live immediately. Only run `stow <package>` again if you add a new file that doesn't have a symlink yet.
+A `git pull` is enough to apply changes — symlinks point directly into the repo, so updates are live immediately. Only run `stow <package>` again if you add a new file that doesn't have a symlink yet. If you delete or rename a file, run `stow -R <package>` to clean up the stale symlink.
