@@ -191,6 +191,7 @@
 
 .workspace-split.mod-root .workspace-tab-header-container {
   --tab-background-active: var(--foyay-tab-active-bg);
+  --tab-text-color-active: var(--foyay-tab-active-text);
   --tab-text-color-focused-active: var(--foyay-tab-active-text);
   --tab-text-color-focused-active-current: var(--foyay-tab-active-text);
 }
